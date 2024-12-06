@@ -45,8 +45,3 @@ INSERT INTO orders (user_id, product_name, quantity, order_date) VALUES
 (9, 'Product J', 3, '2021-01-10'),
 (10, 'Product K', 2, '2021-01-11');
 
--- インデックスの追加
-CREATE INDEX idx_username ON users(username);
-CREATE INDEX idx_email ON users(email);
-CREATE INDEX idx_order_date ON orders(order_date);
-CREATE INDEX idx_product_name_quantity ON orders(product_name, quantity);
