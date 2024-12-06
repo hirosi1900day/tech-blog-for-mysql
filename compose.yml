@@ -1,0 +1,13 @@
+services:
+  mysql:
+    build: .
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql-data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: your_password
+      MYSQL_DATABASE: testdb
+
+volumes:
+  mysql-data:
